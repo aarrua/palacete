@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  color-scheme: light;
+  --radius: 0.25rem;
+
+  /* Warm ivory paper */
+  --background: oklch(0.968 0.012 88);
+  --foreground: oklch(0.24 0.02 150);
+
+  --card: oklch(0.986 0.008 88);
+  --card-foreground: oklch(0.24 0.02 150);
+  --popover: oklch(0.986 0.008 88);
+  --popover-foreground: oklch(0.24 0.02 150);
+
+  /* Deep forest green */
+  --primary: oklch(0.33 0.045 152);
+  --primary-foreground: oklch(0.97 0.012 88);
+
+  --secondary: oklch(0.93 0.014 88);
+  --secondary-foreground: oklch(0.33 0.045 152);
+
+  --muted: oklch(0.93 0.014 88);
+  --muted-foreground: oklch(0.48 0.02 140);
+
+  /* Champagne gold */
+  --accent: oklch(0.74 0.08 78);
+  --accent-foreground: oklch(0.26 0.03 150);
+
+  --destructive: oklch(0.55 0.2 27);
+  --border: oklch(0.86 0.018 88);
+  --input: oklch(0.86 0.018 88);
+  --ring: oklch(0.74 0.08 78);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .font-serif {
+    font-feature-settings: 'liga' 1, 'dlig' 1;
+  }
+}
+
+@utility tracking-luxe {
+  letter-spacing: 0.28em;
+}
