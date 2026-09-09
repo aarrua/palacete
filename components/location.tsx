@@ -9,20 +9,19 @@ export function Location() {
             Ubicación & contacto
           </p>
           <h2 className="mt-5 text-balance font-serif text-4xl font-light leading-tight text-foreground sm:text-5xl">
-            En el corazón de Santa Fe
+            En el corazón de Candioti
           </h2>
           <p className="mt-6 max-w-md text-pretty text-base font-light leading-relaxed text-muted-foreground">
-            A pasos del casco histórico, la costanera y la vida cultural de la
-            ciudad. Con cochera subterránea propia para nuestros huéspedes.
+            El Palacete se encuentra en la esquina de Dorrego y Gobernador Candioti, en Candioti Sur, uno de los sectores gastronómicos y culturales más activos de Santa Fe.
           </p>
 
           <ul className="mt-10 space-y-6">
             <li className="flex items-start gap-4">
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-accent" strokeWidth={1.5} />
               <span className="text-sm font-light leading-relaxed text-foreground">
-                Santa Fe, Argentina
+                Dorrego y Gobernador Candioti
                 <span className="block text-muted-foreground">
-                  Entrada por cochera subterránea
+                  Barrio Candioti Sur, Santa Fe, Argentina
                 </span>
               </span>
             </li>

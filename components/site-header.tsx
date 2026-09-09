@@ -6,10 +6,12 @@ import { Logo } from '@/components/logo'
 import { cn } from '@/lib/utils'
 
 const NAV = [
-  { label: 'Habitaciones', href: '#habitaciones' },
-  { label: 'Gastronomía', href: '#espacios' },
+  { label: 'Inicio', href: '#top' },
+  { label: 'El Palacete', href: '#historia' },
+  { label: 'Chambres', href: '#habitaciones' },
+  { label: 'Espacios', href: '#espacios' },
+  { label: 'Gastronomía', href: '#gastronomia' },
   { label: 'Experiencias', href: '#experiencias' },
-  { label: 'Ofertas', href: '#ofertas' },
   { label: 'Ubicación', href: '#ubicacion' },
 ]
 
@@ -61,12 +63,6 @@ export function SiteHeader() {
             <Globe className="h-3.5 w-3.5" strokeWidth={1.5} />
             Español
           </button>
-          <a
-            href="#reservar"
-            className="hidden border border-accent px-6 py-2.5 text-[0.7rem] font-light uppercase tracking-[0.22em] text-accent transition-colors hover:bg-accent hover:text-accent-foreground sm:inline-block"
-          >
-            Reservar
-          </a>
           <button
             type="button"
             aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
@@ -91,13 +87,6 @@ export function SiteHeader() {
               {item.label}
             </a>
           ))}
-          <a
-            href="#reservar"
-            onClick={() => setOpen(false)}
-            className="mt-6 inline-block border border-accent px-8 py-3 text-[0.72rem] uppercase tracking-[0.22em] text-accent"
-          >
-            Reservar
-          </a>
         </nav>
       )}
     </header>

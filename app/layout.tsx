@@ -18,9 +18,9 @@ const jost = Jost({
 })
 
 export const metadata: Metadata = {
-  title: 'El Palacete · Hotel Boutique · Entre Tertulias · Santa Fe',
+  title: 'El Palacete | Hotel Boutique en Santa Fe',
   description:
-    'El Palacete, hotel boutique en Santa Fe. Un antiguo cine europeo transformado en una experiencia de hospitalidad única entre tertulias, historia y lujo discreto.',
+    'Hotel boutique inspirado en la Belle Époque en Santa Fe. Habitaciones con identidad propia, gastronomía francesa, café-concert, arte, cultura y experiencias exclusivas.',
   generator: 'v0.app',
 }
 

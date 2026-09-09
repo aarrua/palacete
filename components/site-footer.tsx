@@ -4,10 +4,11 @@ const COLS = [
   {
     title: 'Explorar',
     links: [
-      { label: 'Habitaciones', href: '#habitaciones' },
-      { label: 'Gastronomía', href: '#espacios' },
+      { label: 'El Palacete', href: '#historia' },
+      { label: 'Chambres', href: '#habitaciones' },
+      { label: 'Espacios', href: '#espacios' },
+      { label: 'Gastronomía', href: '#gastronomia' },
       { label: 'Experiencias', href: '#experiencias' },
-      { label: 'Ofertas', href: '#ofertas' },
     ],
   },
   {
@@ -31,12 +32,6 @@ export function SiteFooter() {
               Hotel boutique en Santa Fe. Un antiguo cine europeo transformado en
               una experiencia de hospitalidad entre tertulias.
             </p>
-            <a
-              href="#reservar"
-              className="mt-8 inline-block border border-accent px-8 py-3 text-[0.7rem] font-light uppercase tracking-[0.22em] text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
-            >
-              Reservar estancia
-            </a>
           </div>
 
           {COLS.map((col) => (

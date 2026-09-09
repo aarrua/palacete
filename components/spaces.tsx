@@ -2,22 +2,46 @@ import Image from 'next/image'
 
 const SPACES = [
   {
-    tag: 'El Restaurante',
-    name: 'La Bohème',
-    img: '/images/restaurant.png',
-    desc: 'Cocina de autor en un salón que recupera el aura del antiguo cine: manteles impecables, luz cálida y arte de época. Un escenario para las mejores tertulias.',
+    tag: 'Terraza',
+    name: 'Piscina & Terraza',
+    img: '/images/Piscina.jfif',
+    desc: 'La terraza corona El Palacete con vistas abiertas sobre la ciudad y reúne algunos de sus principales espacios de recreación y bienestar. La piscina invita a disfrutar momentos de descanso al aire libre en un entorno íntimo.',
   },
   {
-    tag: 'Nuestro jardín',
+    tag: 'Terraza',
+    name: 'Spa',
+    img: '/images/Spa.jpeg',
+    desc: 'Un espacio dedicado al bienestar, la pausa y la desconexión. El Spa de El Palacete complementa la experiencia de alojamiento con un ambiente sereno y reservado, integrado al sector de terraza.',
+  },
+  {
+    tag: 'Primer Piso',
+    name: 'Sala de Estar Atenea',
+    img: '/images/Foyer.jpeg',
+    desc: 'Atenea es uno de los rincones más tranquilos de El Palacete. Concebida para la lectura, el descanso y la conversación, recupera el espíritu de los antiguos salones literarios europeos.',
+  },
+  {
+    tag: 'Exterior',
     name: 'Le Jardin',
-    img: '/images/garden.png',
-    desc: 'Un patio íntimo entre hiedras y cítricos, con mesas a la luz de las velas. El refugio verde para desayunos lentos y sobremesas interminables.',
+    img: '/images/Jardin.jpeg',
+    desc: 'El jardín de El Palacete funciona como un refugio exterior dentro de la ciudad. Inspirado en los jardines románticos franceses, combina vegetación, senderos y rincones pensados para detenerse, conversar y disfrutar del entorno.',
   },
   {
-    tag: 'En terraza',
+    tag: 'Planta Baja',
+    name: 'La Bohème · Café-Concert',
+    img: '/images/Cafe - Concert la Bohéme.jpeg',
+    desc: 'La Bohème es el corazón social y cultural de El Palacete. Inspirado en los cafés-concert de la Belle Époque, combina gastronomía, espectáculos y encuentros artísticos dentro de un mismo espacio.',
+  },
+  {
+    tag: 'Planta Baja',
+    name: 'Galería La Petit Bohème',
+    img: '/images/Galeria peit-bohéme.jfif',
+    desc: 'Una galería vidriada que prolonga la experiencia de La Bohème hacia el exterior y establece una transición entre el restaurante y el jardín.',
+  },
+  {
+    tag: 'Terraza',
     name: 'Bar Nácar',
-    img: '/images/terrace-bar.png',
-    desc: 'Coctelería de altura al atardecer, con barra de bronce y nácar y vistas a los tejados de Santa Fe. El brindis perfecto para cerrar el día.',
+    img: '/images/Terraza.png',
+    desc: 'Bar Nácar es el refugio nocturno de El Palacete. Ubicado en la terraza, propone un ambiente íntimo, sofisticado y relajado, con vistas abiertas sobre la ciudad y una atmósfera pensada para disfrutar el final del día.',
   },
 ]
 
@@ -30,13 +54,10 @@ export function Spaces() {
             Nuestros espacios
           </p>
           <h2 className="mt-5 text-balance font-serif text-4xl font-light leading-tight text-foreground sm:text-5xl">
-            Gastronomía & encuentro
+            Ambientes con historia
           </h2>
           <p className="mt-6 text-pretty text-base font-light leading-relaxed text-muted-foreground">
-            Cinco ambientes con nombre propio. Junto a La Bohème, Le Jardin y Bar
-            Nácar, El Palacete abre su recepción{' '}
-            <span className="italic text-primary">Le Foyer</span> y el anexo{' '}
-            <span className="italic text-primary">La Petit Bohème</span>.
+            Cada espacio de El Palacete propone una manera diferente de vivir la estadía. Desde rincones pensados para la calma y la lectura hasta ambientes destinados al encuentro, la gastronomía y el bienestar.
           </p>
         </div>
 
